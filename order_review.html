@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<!-- begin::Head -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Card+ Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900|Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <!--end::Base Styles -->
+    <style>
+        .btn-address{
+            margin-top: 5% !important;
+        }
+        .success{
+            margin-bottom: 0% !important;
+            margin-top: 5%;
+        }
+        .radio{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<!-- end::Head -->
+<!-- end::Body -->
+<body >
+<div class="bgcolor">
+    <!-- begin:: Page -->
+    <div class="container">
+        <section class="header">
+            <p class="quickcard">
+                Quickcard+
+                <span class="checkout">Checkout</span></p>
+        </section>
+        <section class="order_review">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img src="images/checkout.png" class="logo_image">
+                    <h2 class="logo_text">
+                        Checkout
+                    </h2>
+                    <div class="side_box">
+                        <p class="Marketplace">
+                            Marketplace
+                        </p>
+                        <p class="jdoes_market">
+                            JDoe’s Market
+                            <img src="images/external_link.png">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <a href="about_us.html">
+                        <img src="images/close.png" class="back_image">
+                    </a>
+                    <div class="row">
+                        <!--<div class="col-md-12 col-sm-12">-->
+                            <!--<div class="step">-->
+                                <!--<p class="step_heading">-->
+                                    <!--Step 1-->
+                                <!--</p>-->
+                                <!--<p class="two_more">Two more</p>-->
+
+                                <!--<div class="hr"></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <div class="col-md-12 col-sm-12 list_product_address">
+                            <div class="product_detail product_success">
+                                <div class="success password_success">
+                                    <div class="success_iamge">
+                                        <img src="images/toast_password_saved.png">
+                                    </div>
+                                    <div class="success_message">
+                                        <p class="success_text">
+                                            Password saved!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product_detail">
+                                <h3 class="para_heading">
+                                    Order Review
+                                </h3>
+                                <div class="order_product_view">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <p class="first_text">1x</p>
+                                                </div>
+                                                <div class="col-md-10 col-xs-10">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <p class="second_text">
+                                                                Apple Watch Series 5 White
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-3 col-xs-12">
+                                                            <p class="price_text">
+                                                                $ 699.00 /ea.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="order_view">
+                                            <div class="row">
+                                                <div class="col-md-2 col-xs-2">
+                                                    <p class="first_text">
+                                                        2x
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-10 col-xs-10">
+                                                    <div class="row">
+                                                        <div class="col-md-9 col-xs-12">
+                                                            <p class="second_text">
+                                                                Apple Watch Magnetic Charging Cable (1m)
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-3 col-xs-12">
+                                                            <p class="price_text">
+                                                                $ 10.00 /ea.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="order_view">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xs-6">
+                                                    <p class="total">
+                                                        Total
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 col-xs-6">
+                                                    <div class="amount">
+                                                        <span class="currency">$</span>
+                                                        <span class="payment">719</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shipping_detail">
+                                <h3 class="para_heading">
+                                    Shipping Info
+                                </h3>
+                                <div class="order_product_view">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+
+                                            <div class="carousel-wrap">
+                                                <div class="owl-carousel">
+                                                    <div class="item">
+                                                        <div class="billing_box back-for-male" id="billing_box_1">
+                                                            <div class="radio">
+                                                                <input class="checked" id="radio-1"  value="male" name="radio" type="radio" checked>
+                                                                <label for="radio-1" class="radio-label"></label>
+                                                            </div>
+                                                            <div class="billing_address_silk">
+                                                                <h3>
+                                                                    Granny’s House
+                                                                </h3>
+                                                                <p class="address_para_billing">
+                                                                    9920 Pacific Heights Blvd, Suite 150. San Diego, California, 92121
+                                                                </p>
+                                                            </div>
+                                                            <div class="edit_pencil">
+                                                                <img src="images/edit_address.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="billing_box" id="billing_box_2">
+                                                            <div class="radio">
+                                                                <input class="checked" id="radio-2" value="female" name="radio" type="radio">
+                                                                <label for="radio-2" class="radio-label"></label>
+                                                            </div>
+                                                            <div class="billing_address_silk">
+                                                                <h3>
+                                                                    Uncle Louis
+                                                                </h3>
+                                                                <p class="address_para_billing">
+                                                                    9920 Pacific Heights Blvd, Suite 150. San Diego, California, 92121
+                                                                </p>
+                                                            </div>
+                                                            <div class="edit_pencil">
+                                                                <img src="images/edit_address.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="billing_box" id="billing_box_3">
+                                                            <div class="radio">
+                                                                <input class="checked" id="radio-3" value="test" name="radio" type="radio">
+                                                                <label for="radio-3" class="radio-label"></label>
+                                                            </div>
+                                                            <div class="billing_address_silk">
+                                                                <h3>
+                                                                    My office
+                                                                </h3>
+                                                                <p class="address_para_billing">
+                                                                    9920 Pacific Heights Blvd, Suite 150. San Diego, California, 92121
+                                                                </p>
+                                                            </div>
+                                                            <div class="edit_pencil">
+                                                                <img src="images/edit_address.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="success">
+                                                <div class="success_iamge">
+                                                    <img src="images/toast_message_address_saved.png">
+                                                </div>
+                                                <div class="success_message">
+                                                    <p class="success_text">
+                                                        Address saved!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            <a href="shipping_info.html" class="btn btn-default btn-address">
+                                                Add New address
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="payment_detail">
+                                <h3 class="para_heading">
+                                    Payment Method
+                                </h3>
+                                <div class="order_product_view">
+                                    <div class="row">
+                                        <div class="col-md-12 col-xs-12">
+                                            <div class="carousel-wrap">
+                                                <div class="owl-carousel">
+                                                    <div class="item">
+                                                        <div class="billing_box back-for-male" id="payment_box_1">
+                                                            <div class="radio">
+                                                                <input class="checked" id="radio-4"  value="box1" name="radio" type="radio" checked>
+                                                                <label for="radio-4" class="radio-label"></label>
+                                                            </div>
+                                                            <div class="billing_address_silk">
+                                                                <p class="credit_debit">
+                                                                    Credit
+                                                                </p>
+                                                                <div class="">
+                                                                    <i class="fa fa-cc-visa"></i>
+                                                                    <span class="card_payment_no">
+                                                                        ....  1234
+                                                                    </span>
+                                                                    <p class="user_name">
+                                                                        Mary S Doe
+
+                                                                        <span class="vali_date">
+
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="edit_pencil">
+                                                                <img src="images/edit_address.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="billing_box" id="payment_box_2">
+                                                            <div class="radio">
+                                                                <input class="checked" id="radio-5" value="box2" name="radio" type="radio">
+                                                                <label for="radio-5" class="radio-label"></label>
+                                                            </div>
+                                                            <div class="billing_address_silk">
+                                                                <p class="credit_debit">
+                                                                    Credit
+                                                                </p>
+                                                                <div class="">
+                                                                    <i class="fa fa-cc-mastercard"></i>
+                                                                    <span class="card_payment_no"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="edit_pencil">
+                                                                <img src="images/edit_address.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="billing_box" id="payment_box_3">
+                                                            <div class="radio">
+                                                                <input class="checked" id="radio-6" value="box3" name="radio" type="radio">
+                                                                <label for="radio-6" class="radio-label"></label>
+                                                            </div>
+                                                            <div class="billing_address_silk">
+                                                                <p class="credit_debit">
+                                                                    Credit
+                                                                </p>
+                                                                <div class="">
+                                                                    <i class="fa fa-cc-mastercard"></i>
+                                                                    <span class="card_payment_no"></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="edit_pencil">
+                                                                <img src="images/edit_address.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="success">
+                                                <div class="success_iamge">
+                                                    <img src="images/toast_message_payment_saved.png">
+                                                </div>
+                                                <div class="success_message">
+                                                    <p class="success_text">
+                                                        Payment saved!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-xs-12">
+                                            <div class="success">
+                                                <div class="success_iamge">
+                                                    <img src="images/toast_message_billing_info_saved.png">
+                                                </div>
+                                                <div class="success_message">
+                                                    <p class="success_text">
+                                                        Address saved!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-xs-12">
+                                            <div class="success">
+                                                <div class="success_iamge">
+                                                    <img src="images/toast_message_billing_info_saved.png">
+                                                </div>
+                                                <div class="success_message">
+                                                    <p class="success_text">
+                                                        Billing info saved!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            <a href="payment.html" class="btn btn-default btn-payment">
+                                                Add New Payment Method
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="acceptance_detail">
+                                <h3 class="para_heading">
+                                    Acceptance Terms
+                                </h3>
+                                <div class="order_product_view">
+                                    <div class="row">
+                                        <form class="" action="">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="payment_checkboxes">
+                                                    <label class="tasks-list-item tasks-list-item_responsive">
+                                                        <input type="checkbox" name="task_1" value="0" class="tasks-list-cb" checked>
+                                                        <span class="tasks-list-mark"></span>
+                                                        <p class="tasks-list-desc_payment para_save_card">
+                                                            I agree with the
+                                                            <a href="privacy_policy.html" class="terms">Terms of Service</a>
+                                                            &
+                                                            <a href="privacy_policy.html" class="terms">Privacy Policy.</a>
+                                                        </p>
+                                                    </label>
+                                                    <!--<label class="tasks-list-item tasks-list-item_responsive">-->
+                                                        <!--<input type="checkbox" name="task_1" value="0" class="tasks-list-cb" checked>-->
+                                                        <!--<span class="tasks-list-mark"></span>-->
+                                                        <!--<p class="tasks-list-desc_payment para_save_card">-->
+                                                            <!--I accept the-->
+                                                            <!--<a href="privacy_policy.html" class="terms">Privacy Policy.</a>-->
+                                                        <!--</p>-->
+                                                    <!--</label>-->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12">
+                                                <a href="shipping_info.html" class="btn btn-default btn-continue">
+                                                    Pay Now
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+<script>
+    $(function () {
+
+        $("input[name=radio]:radio").click(function () {
+            if ($('input[name=radio]:checked').val() == "male") {
+                $('#billing_box_3').removeClass('back-for-male');
+                $('#billing_box_2').removeClass('back-for-male');
+                $('#billing_box_1').addClass('back-for-male');
+
+            } else if ($('input[name=radio]:checked').val() == "female") {
+                $('#billing_box_1').removeClass('back-for-male');
+                $('#billing_box_3').removeClass('back-for-male');
+                $('#billing_box_2').addClass('back-for-male');
+
+            }
+            else if ($('input[name=radio]:checked').val() == "test") {
+                $('#billing_box_1').removeClass('back-for-male');
+                $('#billing_box_2').removeClass('back-for-male');
+                $('#billing_box_3').addClass('back-for-male');
+
+            }
+        });
+    });
+</script>
+<script>
+    $(function () {
+
+        $("input[name=radio]:radio").click(function () {
+            if ($('input[name=radio]:checked').val() == "box1") {
+                $('#payment_box_3').removeClass('back-for-male');
+                $('#payment_box_2').removeClass('back-for-male');
+                $('#payment_box_1').addClass('back-for-male');
+
+            } else if ($('input[name=radio]:checked').val() == "box2") {
+                $('#payment_box_1').removeClass('back-for-male');
+                $('#payment_box_3').removeClass('back-for-male');
+                $('#payment_box_2').addClass('back-for-male');
+
+            }
+            else if ($('input[name=radio]:checked').val() == "box3") {
+                $('#payment_box_1').removeClass('back-for-male');
+                $('#payment_box_2').removeClass('back-for-male');
+                $('#payment_box_3').addClass('back-for-male');
+
+            }
+        });
+    });
+</script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        dots:true,
+        navText: [
+//            "<i class='fa fa-caret-left'></i>",
+//            "<i class='fa fa-caret-right'></i>"
+        ],
+        autoplay: false,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2.5
+            }
+        }
+    })
+</script>
+</body>
+<!-- end::Body -->
+</html>

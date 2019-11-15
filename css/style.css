@@ -1,0 +1,1237 @@
+
+html{
+    height: 100%;
+}
+body{
+    background-image: url("../images/background_solid.png");
+    background-size: cover;
+    opacity: 1;
+    bottom: 0;
+    top: 0;
+    position: relative;
+}
+#bgimg{
+    background-image: url("../images/background_gradient.png");
+    background-size: cover;
+}
+.quick_card{
+    margin-top: 5%;
+}
+.login_image{
+    width: 75%;
+}
+.logo_para{
+    text-align: left;
+    /*font: Bold 27px/40px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    width: 70%;
+    margin-top: 10%;
+}
+.login_section{
+    padding: 15% 2rem 1rem 2rem;
+    /*margin: 0 auto 2rem auto;*/
+    /*overflow: hidden;*/
+    /*margin-top: 15%;*/
+}
+.header_text{
+    text-align: left;
+    /*font: Bold 36px/40px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+    color: #454545;
+    opacity: 1;
+    border-left: 5px solid #F0CB00;
+    padding-left: 3%;
+    margin-left: 10%;
+}
+.form_check{
+    background-color: white;
+    padding: 5% 8%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom:1px solid #454545;
+    -webkit-box-shadow:none;
+    border-radius: 0px;
+    padding: 0px;
+    text-align: left;
+    /*font: Regular 16px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.form-control::placeholder{
+    /*border-bottom: 1px solid #454545;*/
+    opacity: 0.5;
+}
+
+input:focus {
+
+    outline-style: none
+
+}
+.show, .hide{
+    cursor: pointer;
+    background: none;
+    border-style: none;
+    border: none;
+    width: 0px;
+    height: 0px;
+
+}
+
+.show:focus, .hide:focus {
+    outline: none
+}
+
+.hide {
+    display: none
+}
+.fas{
+    position: relative;
+    top: -30px;
+    left: 295px;
+    color: #F0CB00;
+}
+.forget_password{
+    /*font: Bold 16px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #EDA929;
+    position: relative;
+    top: -30px;
+    left: 64%;
+}
+.forget_password:hover , .forget_password:focus{
+    color: #EDA929;
+}
+.as_guest{
+    text-align: center;
+    text-decoration: underline;
+    /*font: Bold 16px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    margin-top: 3%;
+}
+.as_guest:hover{
+    color: #454545;
+}
+.span_guest{
+    background-color: #F0CB00;
+    padding: 2px;
+}
+
+.btn.btn-default{
+    background: transparent linear-gradient(270deg, #FAE70A 0%, #EDA929 100%) 0% 0% no-repeat padding-box;
+    border-radius: 35px;
+    opacity: 1;
+
+    width: 100%;
+    margin-top: 10%;
+    padding: 3%;
+    border: none;
+    outline:none;
+    outline-style: none !important;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: 0 !important;
+    outline-offset: 0  !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none  !important;
+}
+
+.btn.btn-default:hover{
+    background: transparent linear-gradient(270deg, #EDA929 0%, #FAE70A 100%) 0% 0% no-repeat padding-box;
+}
+
+.login_text{
+    text-align: center;
+    /*font: Bold 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+
+/*  ----- About Us ------ */
+
+.header , .about_us{
+    margin: 5% 0;
+}
+.about_us_hidden{
+    display: none;
+}
+.logo{
+    height: 100px;
+}
+.cross_image{
+    height: 20px;
+    float: right;
+    position: relative;
+    top:80px;
+    display: none;
+}
+.imge_text{
+    padding: 0 15%;
+}
+h2{
+    text-align: left;
+    font-family: "Source Sans Pro", Black;
+    /*font: Black 48px/46px Source Sans Pro;*/
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.para_heading{
+    text-align: left;
+    font-family: "Source Sans Pro", Bold;
+    /*font: Bold 36px/40px Source Sans Pro;*/
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+    color: #454545;
+    opacity: 1;
+    margin-top: -8px;
+    border-left: 5px solid #F0CB00;
+    padding-left: 3%;
+}
+.para_graph{
+    padding-right: 10%;
+
+}
+.para_text{
+    text-align: left;
+    /*font: 16px/30px Source Sans Pro;*/
+    font-family: "Source Sans Pro", Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    padding-left: 6%;
+}
+.box1{
+    height: 280px;
+    overflow-y: scroll;
+}
+/* width */
+.box1::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.box1::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey;*/
+    /*border-radius: 5px;*/
+}
+
+/* Handle */
+.box1::-webkit-scrollbar-thumb {
+    background: #BBBBBB;
+    border-radius: 5px;
+    opacity: .8;
+
+}
+
+/* Handle on hover */
+.box1::-webkit-scrollbar-thumb:hover {
+    background: #BBBBBB;
+    opacity:1;
+    cursor: pointer;
+}
+.box2{
+    margin-top: 15%;
+}
+
+.btn_cont{
+    /*font: bold 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    width: 50% !important;
+    margin-left: 25%;
+    border-radius: 0px;
+}
+
+/*    ------  Order Review  ------        */
+.password_success{
+    background-color: white;
+}
+.product_success{
+    margin-top: 5% !important;
+}
+.quickcard{
+    text-align: left;
+    font: Bold 18px/23px Source Sans Pro;
+    letter-spacing: 0;
+    color: #EDA929;
+}
+.Marketplace{
+    text-align: left;
+    /*font: Regular 16px/30px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.jdoes_market{
+    background-color: #F0CB00;
+    width: 36%;
+    text-align: center;
+    text-decoration: underline;
+    font: Bold 16px/24px Source Sans Pro;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.side_box{
+     margin-top: 14%;
+ }
+.back_image{
+    width: 20px;
+    float: right;
+    display: none;
+}
+.step{
+    margin-top: 14%;
+    padding-right: 10%;
+}
+.step_heading{
+    text-align: left;
+    font: Bold 42px/40px Source Sans Pro;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    width: 50%;
+    float: left;
+}
+.two_more{
+    float: right;
+    text-align: right;
+    font: Bold 18px/23px Source Sans Pro;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 0.5;
+    margin-top: 2%;
+}
+.hr{
+    width: 100%;
+    border-top: 1px solid #454545;
+    position: relative;
+    top: 70px;
+    opacity: .5;
+}
+.product_detail , .shipping_detail , .payment_detail , .acceptance_detail{
+    margin-top: 8%;
+    width: 90%;
+}
+.list_product_address{
+    margin-top: 7%;
+}
+.btn-address{
+    width: 35% !important;
+    text-align: center;
+    /*font: Black 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    padding: 2% !important;
+    background: white !important;
+    border: 2px solid #F0CB00 !important;
+}
+.btn-payment{
+    width: 50% !important;
+    text-align: center;
+    /*font: Black 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    padding: 2% !important;
+    background: white !important;
+    border: 2px solid #F0CB00 !important;
+}
+.order_product_view{
+    background-color: white;
+    margin-top: 4%;
+    padding: 5% 3%;
+    border-radius: 5px;
+}
+.first_text{
+    background-color: #F0CB00;
+    text-align: center;
+    /*font: Bold 18px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: #454545;
+    opacity: 1;
+    width: 35%;
+}
+.second_text{
+    text-align: left;
+    /*font: Bold 18px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.price_text{
+    text-align: right;
+    /*font: Regular 16px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #959595;
+    opacity: 1;
+}
+.order_view{
+    border-top: 1px solid #F0CB00 !important;
+}
+.total{
+    text-align: left;
+    /*font: Bold 18px/27px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #959595;
+    opacity: 1;
+}
+.amount{
+    text-align: right;
+    letter-spacing: 0;
+    color: #959595;
+    opacity: 1;
+    margin-top: -5%;
+}
+.currency{
+    text-align: right;
+    /*font: Bold 18px/27px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #959595;
+}
+.payment{
+    text-align: right;
+    /*font: Black 40px/27px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #959595;
+}
+section{
+    margin-bottom: 10%;
+}
+.btn-continue{
+    margin-top: 2% !important;
+    width: 45% !important;
+    text-align: center;
+    /*font: Black 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    padding: 2% !important;
+}
+
+/*  ------ shipping_info_form  -----------*/
+.new_address{
+    width: 90%;
+    margin-top: 15%;
+}
+.shipping_info_form{
+    background-color: white;
+    margin-top: 3%;
+    padding: 3% 3%;
+    border-radius: 5px;
+}
+.shipping_heading{
+    margin-top: 5%;
+}
+.btn.btn-primary{
+    background-color: transparent;
+    color: #454545;
+    border: none;
+    border-bottom: 1px solid rgba(69,69,69, .5);
+    border-radius: 0;
+}
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover{
+    color: #454545;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #454545;
+}
+.btn-cc{
+    opacity: .5;
+    margin-left: -10px;
+}
+.dropdown-toggle::after{
+    color: transparent;
+    content: url("../images/down-arrow.png");
+    vertical-align: 0;
+    margin-left: 1.255em;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    position: relative;
+    top:4px;
+
+}
+.billing_info_checkbox{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+select:required:invalid {
+    color: rgba(69, 69, 69, .35);
+}
+option[value=""][disabled] {
+    display: none;
+}
+option {
+    color: black;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/down-arrow.png") no-repeat 98% !important;
+    background: url("../images/down-arrow.png") no-repeat calc(100% - 10px) !important;
+}
+/*For IE*/
+select::-ms-expand { display: none; }
+
+.dropdown-menu{
+    height: 300px;
+    overflow: auto;
+}
+.shipping-control , .phoneNumber{
+    border-bottom: 1px solid rgba(69, 69, 69, .5);
+    opacity: 1;
+}
+.checkout{
+    text-align: left;
+    /*font: Regular 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+}
+.billing_address{
+    height: 98px;
+}
+.billing_heading{
+    text-align: center;
+    /*font: Bold 22px/37px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.44px;
+    color: #454545;
+    opacity: 1;
+    padding-top: 11%;
+}
+.form_group_billing{
+    padding: 0 5%;
+}
+.autoUpdate{
+    background-color: #FFFDF0;
+    padding-bottom: 3%;
+    opacity: 1;
+}
+
+.tasks-lists {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -11px;
+    padding: 10px 4px;
+    width: 19px;
+    height: 3px;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+}
+
+.tasks-lists:before {
+    content: '';
+    display: block;
+    height: 3px;
+    background: #F0CB00;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px #F0CB00, 0 -6px #F0CB00;
+    box-shadow: 0 6px #F0CB00, 0 -6px #F0CB00;
+}
+
+.tasks-list-item {
+    display: block;
+    /*line-height: 24px;*/
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    /*top: 20px;*/
+    /*margin-bottom: 10%;*/
+}
+
+/*label{*/
+    /*margin-top: 15%;*/
+/*}*/
+.tasks-list-cb {
+    display: none;
+}
+
+.tasks-list-mark {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F0CB00;
+    border-radius: 4px;
+}
+
+.tasks-list-mark:before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -5px;
+    height: 5px;
+    width: 10px;
+    border: solid #454545;
+    border-width: 0 0 2px 2px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.tasks-list-cb:checked ~ .tasks-list-mark {
+    border-color: #F0CB00;
+}
+
+.tasks-list-cb:checked ~ .tasks-list-mark:before {
+    display: block;
+}
+
+.tasks-list-desc {
+    text-align: left;
+    /*font: Bold 16px/20px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.success{
+    border-left: 5px solid #00CC6E;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    margin-bottom: 8%;
+}
+.success_iamge{
+
+}
+.success_message{
+
+}
+.success_text{
+    text-align: left;
+    /*font: Bold 24px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro", Bold;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    margin-left: 5%;
+    width: 100%;
+    vertical-align: middle;
+}
+.error{
+    border-left: 5px solid #EB5051;
+    padding-left: 3%;
+    padding-top: 2%;
+    display: flex;
+    margin-bottom: 8%;
+}
+.error_iamge{
+    width: 15%;
+}
+h4{
+    text-align: left;
+    /*font: Bold 24px/30px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.btn-address:focus , .btn-payment:focus{
+    background: #F0CB00 !important;
+}
+.address_not_save{
+    width: 75%;
+}
+.address_para{
+    text-align: left;
+    /*font: Bold 24px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro", Bold;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.try_again{
+    text-align: left;
+    /*font: Regular 16px/30px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    margin-top: -10px;
+}
+
+/*  ----------     Payment Section       -------------------*/
+
+.cvv_code{
+    text-align: right;
+    /*font: Black 16px/20px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #EDA929;
+    opacity: 1;
+}
+.cvv_code a:hover , .cvv_code a:focus{
+    color: #EDA929;
+}
+.cvv_code:hover{
+    cursor: pointer !important;
+}
+/*.payment_checkboxes{*/
+    /*margin-top: 5%;*/
+/*}*/
+.para_save_card{
+    position: relative;
+    top:-20px;
+    left: 5%;
+}
+.tasks-list-desc_payment{
+    text-align: left;
+    /*font: Bold 16px/20px Roboto;*/
+    font-family: "Roboto",Bold;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.terms{
+    text-align: left;
+    /*font: Bold 16px/20px Roboto;*/
+    font-family: "Roboto",Bold;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+    letter-spacing: 0;
+    color: #EDA929;
+}
+.front_side_card{
+    background-image: url("../images/card@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 175px;
+}
+.back_side_card img{
+    width: 100%;
+    /*height: 150px;*/
+}
+.card_number{
+    text-align: left;
+    font-family: "Source Sans Pro",Semibold;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    position: relative;
+    top: 35%;
+    left: 10%;
+}
+.visa{
+    float: right;
+    margin-top: 8%;
+    margin-right: 5%;
+}
+.name_on_card{
+    font-family: "Source Sans Pro",Semibold;
+    font-size: 18px;
+    font-weight: 600;
+    color: #454545;
+    opacity: 1;
+    width: 50%;
+    position: relative;
+    top: 43%;
+    left: 10%;
+}
+.expire_date{
+    font-family: "Source Sans Pro",Semibold;
+    font-size: 18px;
+    font-weight: 600;
+    color: #454545;
+    opacity: 1;
+    width: 50%;
+    position: relative;
+    top: 30%;
+    left: 27%;
+    float: right;
+}
+.billing_box{
+    /*background: transparent linear-gradient(90deg, #FAE70A 0%, #EDA929 100%) 0% 0% no-repeat padding-box;*/
+    border: 1px solid #F0CB00;
+    border-radius: 6px;
+    opacity: 1;
+    display: flex;
+    /*margin-left: -35px;*/
+    /*margin-right: 5%;*/
+}
+.back-for-male
+{
+    background: transparent linear-gradient(90deg, #FAE70A 0%, #EDA929 100%) 0% 0% no-repeat padding-box;
+}
+.test{
+    background: transparent linear-gradient(90deg, #FAE70A 0%, #EDA929 100%) 0% 0% no-repeat padding-box;
+}
+
+.radio {
+    /*margin: 0.5rem;*/
+}
+.radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+.radio input[type="radio"] + .radio-label:before {
+    content: '';
+    background: #f4f4f4;
+    border-radius: 100%;
+    border: 2px solid #F0CB00;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    position: relative;
+    /*top: -0.2em;*/
+    margin-right: 1em;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+}
+.radio input[type="radio"]:checked + .radio-label:before {
+    background-color: #454545 ;
+    box-shadow: inset 0 0 0 3px white;
+}
+.radio input[type="radio"]:focus + .radio-label:before {
+    outline: none;
+    border-color: #F0CB00 ;
+}
+/*.radio input[type="radio"]:disabled + .radio-label:before {*/
+    /*box-shadow: inset 0 0 0 4px white;*/
+    /*border-color: #b4b4b4;*/
+    /*background: #b4b4b4;*/
+/*}*/
+/*.radio input[type="radio"] + .radio-label:empty:before {*/
+    /*margin-right: 0;*/
+/*}*/
+
+
+
+
+
+
+/*    ------  Term & Service  --------   */
+
+#term_bg{
+    background: none;
+    background-color: white;
+}
+.term_heading{
+    text-align: left;
+    /*font: Bold 36px/40px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Bold;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+    color: #454545;
+    opacity: 1;
+    margin-top: 20px;
+    border-left: 5px solid #F0CB00;
+    padding-left: 3%;
+}
+.para_terms_condition{
+    text-align: left;
+    /*font: Regular 16px/30px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    height: 330px;
+    padding-right: 5%;
+    overflow: auto;
+}
+.btn_term_condition{
+    width: 30% !important;
+    text-align: center;
+    /*font: Black 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+    margin-left: 36%;
+}
+.tab button {
+    /*display: block;*/
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /*transition: 0.3s;*/
+    text-align: left;
+    /*font: Bold 36px/40px Source Sans Pro;*/
+    /*font-family: "Source Sans Pro",Bold;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+    color: #454545;
+    margin-top: 20px;
+    padding-left: 3%;
+    opacity: .5;
+}
+
+.tab button:hover {
+    color: #454545;
+}
+
+.tab button.active {
+    border-left: 5px solid #F0CB00;
+    color: #454545;
+    opacity: 1;
+    font-family: "Source Sans Pro",Bold;
+    font-size: 36px;
+    font-weight: 700;
+}
+/* width */
+.para_terms_condition::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.para_terms_condition::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey;*/
+    /*border-radius: 5px;*/
+}
+
+/* Handle */
+.para_terms_condition::-webkit-scrollbar-thumb {
+    background: #BBBBBB;
+    border-radius: 5px;
+    opacity: .8;
+
+}
+
+/* Handle on hover */
+.para_terms_condition::-webkit-scrollbar-thumb:hover {
+    background: #BBBBBB;
+    opacity:1;
+    cursor: pointer;
+}
+.tabs_terms{
+    margin-top: 10%;
+}
+
+.incress_drecress{
+    float: right;
+}
+.font_size_buttons{
+    background-color: transparent;
+    border: transparent;
+    /*font: Regular 38px/32px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.font_size_buttons:focus , .font_size_buttons:hover{
+    border: transparent;
+}
+
+/*      --------    Progress page         -------------             */
+
+.btn-try_again{
+    margin-top: 5% !important;
+    padding: 2% !important;
+    width: 20% !important;
+    text-align: center;
+    /*font: Black 18px/23px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Black;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.btn.btn-try_again{
+    display: block;
+    margin: 0 auto;
+}
+
+/*       ----------------    Error Page     -------------------          */
+
+.img2{
+    width: 56%;
+    margin-left: 20%;
+    margin-top: 30%;
+}
+
+
+/*       ----------------    Save Password Page     -------------------          */
+
+.img3{
+    margin-top: 20%;
+    margin-left: 12%;
+    width: 60%;
+}
+
+
+
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/*h2{*/
+    /*text-align:center;*/
+    /*padding: 20px;*/
+/*}*/
+/* Slider */
+h3{
+    text-align: left;
+    /*font: SemiBold 18px/40px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Semibold;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.address_para_billing{
+    text-align: left;
+    /*font: Regular 16px/20px Source Sans Pro;*/
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Source Sans Pro",Regular;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 0.6;
+}
+
+.radio{
+    margin-top: 20px;
+}
+.radio label{
+    padding-left: 10px;
+}
+.billing_address_silk{
+    width: 150px;
+}
+.edit_pencil{
+    margin-top: 25%;
+}
+.credit_debit{
+    text-align: left;
+    /*font: Regular 16px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.fa.fa-cc-visa{
+    font-size: 20px;
+}
+.fa.fa-cc-mastercard{
+    font-size: 20px;
+}
+.card_payment_no{
+    font-family: "Source Sans Pro",Regular;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+    color: #454545;
+    opacity: 1;
+}
+.user_name{
+    text-align: left;
+    /*font: Regular 16px/24px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.vali_date{
+
+}
+
+/*.owl-item {*/
+    /*width: 200px !important;*/
+/*}*/
+
+.carousel-wrap {
+    /*margin: 90px auto;*/
+    /*padding: 0 5%;*/
+    width: 100%;
+    position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+}
+/*------Recover Password----------*/
+
+.recover_para{
+    text-align: left;
+    letter-spacing: 0;
+    color: #454545;
+    opacity: 1;
+}
+.recover_span{
+    text-align: left;
+    /*font: Semibold 16px/30px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Semibold;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #454545;
+}
+.error_message{
+    text-align: left;
+    /*font: Regular 12px/15px Source Sans Pro;*/
+    font-family: "Source Sans Pro",Regular;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #EB5051;
+    opacity: 1;
+}

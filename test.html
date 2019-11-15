@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align:center;">
+
+<input onkeyup="myFunction(this.value)"
+       type="text"
+       id="myText"
+       value="Mickey">
+
+
+<p id="demo"> 56456456 54654654</p>
+
+<script>
+    function myFunction(x) {
+        var x =  document.getElementById("myText").value;
+
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+</body>
+
+</html>

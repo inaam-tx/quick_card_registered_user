@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<!-- begin::Head -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Card+ Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <!--end::Base Styles -->
+    <style>
+
+    </style>
+</head>
+<!-- end::Head -->
+<!-- end::Body -->
+<body >
+<div class="bgcolor">
+    <!-- begin:: Page -->
+    <div class="container">
+        <section class="header">
+            <p class="quickcard">Quickcard+ <span class="checkout">Checkout</span></p>
+        </section>
+        <section class="order_review">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img src="images/payment.png" class="logo_image">
+                    <h2 class="logo_text">
+                        Payment
+                    </h2>
+                    <!--<div class="side_box">-->
+                    <!--<p class="Marketplace">-->
+                    <!--Marketplace-->
+                    <!--</p>-->
+                    <!--<p class="jdoes_market">-->
+                    <!--JDoe’s Market-->
+                    <!--<img src="images/external_link.png">-->
+                    <!--</p>-->
+                    <!--</div>-->
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <a href="order_review.html">
+                        <img src="images/close.png" class="back_image">
+                    </a>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+
+                            <div class="new_address">
+                                <h3 class="para_heading shipping_heading">
+                                    Edit Billing Address
+                                </h3>
+                                <div class="shipping_info_form">
+                                    <div class="row">
+                                        <form action="" class="">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <div class="box">
+                                                        <select class="form-control shipping-control" required>
+                                                            <option value="" selected>Choose Address</option>
+                                                            <option value="" >California</option>
+                                                            <option value="">Los angles</option>
+                                                            <option value="">Washington DC</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control shipping-control" placeholder="Address" name="address">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control shipping-control" placeholder="City" name="city">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="box">
+                                                        <select class="form-control shipping-control" required>
+                                                            <option value="" disabled selected>State</option>
+                                                            <option value="" >California</option>
+                                                            <option value="">Los angles</option>
+                                                            <option value="">Washington DC</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group box">
+                                                    <select class="form-control shipping-control" required>
+                                                        <option value="" disabled selected>Country</option>
+                                                        <option value="">United States</option>
+                                                        <option value="">Canada</option>
+                                                        <option value="">China</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control shipping-control" placeholder="Zipcode" name="city">
+                                                </div>
+                                                <label class="tasks-list-item billing_info_checkbox">
+                                                    <input id="checkbox1" type="checkbox" name="task_1" value="0" class="tasks-list-cb" checked>
+                                                    <span class="tasks-list-mark"></span>
+                                                    <span class="tasks-list-desc">Save billing information for future purchases.</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12">
+                                                <div class="error">
+                                                    <div class="error_iamge">
+                                                        <img src="images/toast_message_billing_info_not_saved.png">
+                                                    </div>
+                                                    <div class="address_not_save">
+                                                        <p class="address_para">
+                                                            Billing Info not saved!
+                                                        </p>
+                                                        <p class="try_again">
+                                                            Try again.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="col-md-6 col-sm-12 billing_section">-->
+                                            <!--<div id="autoUpdate" class="autoUpdate" style="display: none; background-color: #FFFDF0;">-->
+
+                                            <!--<div class="billing_address">-->
+                                            <!--<p class="billing_heading">Billing Address</p>-->
+                                            <!--</div>-->
+                                            <!--<div class="form_group_billing">-->
+                                            <!--<div class="form-group">-->
+                                            <!--<input type="text" class="form-control shipping-control" placeholder="Name" name="name">-->
+                                            <!--</div>-->
+                                            <!--<div class="form-group">-->
+                                            <!--<input type="text" class="form-control shipping-control" placeholder="Address" name="address">-->
+                                            <!--</div>-->
+                                            <!--<div class="form-group">-->
+                                            <!--<input type="text" class="form-control shipping-control" placeholder="City" name="city">-->
+                                            <!--</div>-->
+                                            <!--<div class="form-group">-->
+                                            <!--<select class="form-control shipping-control" required>-->
+                                            <!--<option value="" disabled selected>State</option>-->
+                                            <!--<option value="">California</option>-->
+                                            <!--<option value="">Los angles</option>-->
+                                            <!--<option value="">Washington DC</option>-->
+                                            <!--</select>-->
+                                            <!--</div>-->
+                                            <!--<div class="form-group box">-->
+                                            <!--<select class="form-control shipping-control" required>-->
+                                            <!--<option value="" disabled selected>Country</option>-->
+                                            <!--<option value="" >United States</option>-->
+                                            <!--<option value="">Canada</option>-->
+                                            <!--<option value="">China</option>-->
+                                            <!--</select>-->
+                                            <!--</div>-->
+                                            <!--<div class="form-group">-->
+                                            <!--<input type="text" class="form-control shipping-control" placeholder="Zipcode" name="city">-->
+                                            <!--</div>-->
+                                            <!--</div>-->
+                                            <!--</div>-->
+                                            <!--</div>-->
+                                        </form>
+                                        <div class="col-md-12 col-sm-12">
+                                            <a href="order_review.html" class="btn btn-default btn-continue">
+                                                Save Address and Continue
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="js/intlInputPhone.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.input-phone').intlInputPhone();
+    })
+</script>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+<script>
+    $(document).ready(function(){
+        $('#checkbox1').change(function(){
+            if(this.checked)
+                $('#autoUpdate').fadeIn('fast');
+            else
+                $('#autoUpdate').fadeOut('fast');
+
+        });
+    });
+</script>
+</body>
+<!-- end::Body -->
+</html>

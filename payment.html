@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<!-- begin::Head -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Card+ Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900|Source+Sans+Pro:400,600,700,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <style>
+        .btn-address{
+            margin-top: 5% !important;
+            margin-bottom: 5% !important;
+        }
+    </style>
+    <!--end::Base Styles -->
+</head>
+<!-- end::Head -->
+<!-- end::Body -->
+<body >
+<div class="bgcolor">
+    <!-- begin:: Page -->
+    <div class="container">
+        <section class="header">
+            <p class="quickcard">Quickcard+ <span class="checkout">Checkout</span></p>
+        </section>
+        <section class="order_review">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img src="images/payment.png" class="logo_image">
+                    <h2 class="logo_text">
+                        Payment
+                    </h2>
+
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <a href="shipping_info.html">
+                        <img src="images/close.png" class="back_image">
+                    </a>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+
+                            <div class="new_address">
+
+                                <h3 class="para_heading shipping_heading">
+                                    Payment
+                                </h3>
+                                <div class="shipping_info_form">
+                                    <form action="" class="">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="form-group">
+                                                    <input name="AccountNo" onkeyup="myCardno(this.value)" id="cardNo" placeholder="Card Number" title="Card Number" class="form-control shipping-control" onfocus="showCardValue()"  onkeypress="formatCardNumber(event, this); limit(event, this, 19) " onpaste="return false" oncut="return false" tabindex="2" autocomplete="nope" type="text">
+
+                                                    <!--<input class="field" id="credit-card" value="" autocomplete="off" type="text" />-->
+                                                </div>
+                                                <div class="form-group">
+                                                    <input onkeyup="myCardname(this.value)" id="card_name" maxlength="20" type="text" class="form-control shipping-control" placeholder="Name on card" name="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input onkeyup="myCardexp(this.value)" id="card_exp" type="text" class="form-control shipping-control" placeholder="MM/YY" name="name" maxlength="5">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" name="price" maxlength="4" id="price_per_ticket" placeholder="CVV Code" class="form-control shipping-control calculator-input" onkeypress="return event.charCode >= 48 && event.charCode <= 57">                                                        <!--<input type="password" class="form-control shipping-control" placeholder="CVV code" name="city">-->
+                                                </div>
+                                                <p class="cvv_code" onclick="myCVV()">
+                                                    What is CVV?
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-12">
+
+                                                        <div class="front_side_card" id="front_side">
+                                                            <img src="images/card_visa_logo.png" class="visa">
+                                                            <img src="images/card_mastercard.png" class="visa" style="display: none">
+                                                            <img src="images/card_jcb.png" class="visa" style="display: none">
+                                                            <img src="images/card_discover.png" class="visa" style="display: none">
+                                                            <img src="images/card_amex.png" class="visa" style="display: none">
+                                                            <p id="card" class="card_number">
+                                                                .... .... .... 1234
+                                                            </p>
+                                                            <p id="CardName" class="name_on_card">
+                                                                John Doe
+                                                            </p>
+                                                            <p id="cardExp" class="expire_date">
+                                                                06/07
+                                                            </p>
+                                                        </div>
+                                                        <!--<div class="back_side_card" id="front_side">-->
+                                                        <!--<img class="imgSet" src="images/card_filled@2x.png">-->
+                                                        <!--</div>-->
+                                                        <div class="back_side_card" id="imageProcess" style="display:none">
+                                                            <img class="imgSet" src="images/card_cvv@2x.png">
+                                                        </div>
+
+                                                    </div>
+                                                    <!--<div class="col-md-2"></div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-xs-12">
+                                                <h4>Billing Address</h4>
+
+                                                <div class="carousel-wrap">
+                                                    <div class="owl-carousel">
+                                                        <div class="item">
+                                                            <div class="billing_box back-for-male" id="billing_box_1">
+                                                                <div class="radio">
+                                                                    <input class="checked" id="radio-1"  value="male" name="radio" type="radio" checked>
+                                                                    <label for="radio-1" class="radio-label"></label>
+                                                                </div>
+                                                                <div class="billing_address_silk">
+                                                                    <h3>
+                                                                        Granny’s House
+                                                                    </h3>
+                                                                    <p class="address_para_billing">
+                                                                        9920 Pacific Heights Blvd, Suite 150. San Diego, California, 92121
+                                                                    </p>
+                                                                </div>
+                                                                <div class="edit_pencil">
+                                                                    <img src="images/edit_address.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="billing_box" id="billing_box_2">
+                                                                <div class="radio">
+                                                                    <input class="checked" id="radio-2" value="female" name="radio" type="radio">
+                                                                    <label for="radio-2" class="radio-label"></label>
+                                                                </div>
+                                                                <div class="billing_address_silk">
+                                                                    <h3>
+                                                                        Uncle Louis
+                                                                    </h3>
+                                                                    <p class="address_para_billing">
+                                                                        9920 Pacific Heights Blvd, Suite 150. San Diego, California, 92121
+                                                                    </p>
+                                                                </div>
+                                                                <div class="edit_pencil">
+                                                                    <img src="images/edit_address.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <div class="billing_box" id="billing_box_3">
+                                                                <div class="radio">
+                                                                    <input class="checked" id="radio-3" value="test" name="radio" type="radio">
+                                                                    <label for="radio-3" class="radio-label"></label>
+                                                                </div>
+                                                                <div class="billing_address_silk">
+                                                                    <h3>
+                                                                        My office
+                                                                    </h3>
+                                                                    <p class="address_para_billing">
+                                                                        9920 Pacific Heights Blvd, Suite 150. San Diego, California, 92121
+                                                                    </p>
+                                                                </div>
+                                                                <div class="edit_pencil">
+                                                                    <img src="images/edit_address.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <a class="btn btn-default btn-address" onclick="newAddress()">
+                                                    Add New address
+                                                </a>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-12" style="display: none" id="autoUpdate">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control shipping-control" placeholder="Full name" name="name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control shipping-control" placeholder="E-mail" name="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="input-phone"></div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control shipping-control" placeholder="Address" name="address">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control shipping-control" placeholder="City" name="city">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="box">
+                                                                <select class="form-control shipping-control" required>
+                                                                    <option value="" disabled selected>State</option>
+                                                                    <option value="" >California</option>
+                                                                    <option value="">Los angles</option>
+                                                                    <option value="">Washington DC</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group box">
+                                                            <select class="form-control shipping-control" required>
+                                                                <option value="" disabled selected>Country</option>
+                                                                <option value="">United States</option>
+                                                                <option value="">Canada</option>
+                                                                <option value="">China</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control shipping-control" placeholder="Zipcode" name="city">
+                                                        </div>
+                                                        <label class="tasks-list-item billing_info_checkbox">
+                                                            <input id="checkbox1" type="checkbox" name="task_1" value="0" class="tasks-list-cb" checked>
+                                                            <span class="tasks-list-mark"></span>
+                                                            <span class="tasks-list-desc">Save this address as default.</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12">
+                                                <div class="error">
+                                                    <div class="error_iamge">
+                                                        <img src="images/toast_message_payment_not_saved.png">
+                                                    </div>
+                                                    <div class="address_not_save">
+                                                        <p class="address_para">
+                                                            Payment not saved!
+                                                        </p>
+                                                        <p class="try_again">
+                                                            Try again.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <a href="order_review.html" class="btn btn-default btn-continue">
+                                                    Save card and Continue
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+<script>
+    function formatCardNumber(event, element) {
+        if (isNaN(event.key) && !isAllowedKey(event)) {
+            event.preventDefault();
+        } else {
+            if (event.keyCode != 8) {
+                if(element.value.length > 14) {
+                    var position = element.selectionStart;
+                    element.value = element.value.replace(/\W/gi, '').replace(/^(.{4})(.{4})(.{4})(.*)$/, "$1 $2 $3 $4");
+                    if(element.value.length != 19) {
+                        element.setSelectionRange(position, position);
+                    }
+                }
+                else {
+                    element.value = element.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+                }
+            }
+        }
+    }
+
+    function isAllowedKey(event) {
+        var allowed = false;
+        if (event.keyCode === 8 || event.keyCode === 9 || event.keyCode === 37 || event.keyCode === 39) {
+            allowed = true;
+        }
+        return allowed;
+    }
+
+    function limit(event, element, max_chars) {
+        if(isTextSelected(element)){																		//
+            max_chars += 1;
+        }
+        if (element.value.length >= max_chars && !isAllowedKey(event)) {
+            event.preventDefault();
+        }
+    }
+
+    function showCardValue() {
+        document.getElementById("cardNo").value = document.getElementById("cardNo").value;
+    }
+
+    function isTextSelected(input) {
+        var startPosition = input.selectionStart;
+        var endPosition = input.selectionEnd;
+
+        var selObj = document.getSelection();
+        var selectedText = selObj.toString();
+
+        if (selectedText.length != 0) {
+            input.focus();
+            input.setSelectionRange(startPosition, endPosition);
+            return true;
+        } else if (input.value.substring(startPosition, endPosition).length != 0) {
+            input.focus();
+            input.setSelectionRange(startPosition, endPosition);
+            return true;
+        }
+        return false;
+    }
+
+    function hideCardValue(val) {
+        document.getElementById("cardNoSafe").value = val;
+        var len = val.length;
+        if (len >= 14) {
+            const regex = /\d{4}(?= \d{1})/g;
+            const substr = "****";
+            document.getElementById("cardNo").value = val.replace(regex, substr);
+        }
+    }
+
+
+    $('#card_exp').on('keypress change blur', function () {
+        $(this).val(function (index, value) {
+            var x = value.replace(/[^0-9]+/gi, '').replace(/(.{2})/g,'$1/');
+            return x;
+        });
+        $(this).val(function(index,value){
+            var q=document.getElementById('card_exp').value;
+            var res = q.slice(0, 5);
+            return res
+        })
+
+    });
+
+</script>
+<script>
+
+    function myCardno(x) {
+      var x =  document.getElementById("cardNo").value;
+        document.getElementById("card").innerHTML = x;
+      if (x =='')
+      {
+          document.getElementById("card").innerHTML = '.... .... .... 1234';
+      }
+
+    }
+
+    function myCardname() {
+        var y =  document.getElementById("card_name").value;
+        document.getElementById("CardName").innerHTML = y;
+        if (y =='')
+        {
+            document.getElementById("CardName").innerHTML = 'Jhon Doe';
+        }
+    }
+
+    function myCardexp() {
+        var z =  document.getElementById("card_exp").value;
+        document.getElementById("cardExp").innerHTML = z;
+        if (z =='')
+        {
+            document.getElementById("cardExp").innerHTML = '06/07';
+        }
+    }
+</script>
+<script>
+    function myCVV() {
+        var x = document.getElementById("imageProcess");
+        var y = document.getElementById("front_side")
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none"
+        } else {
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    }
+</script>
+<script>
+    $(function () {
+
+        $("input[name=radio]:radio").click(function () {
+            if ($('input[name=radio]:checked').val() == "male") {
+                $('#billing_box_3').removeClass('back-for-male');
+                $('#billing_box_2').removeClass('back-for-male');
+                $('#billing_box_1').addClass('back-for-male');
+
+            } else if ($('input[name=radio]:checked').val() == "female") {
+                $('#billing_box_1').removeClass('back-for-male');
+                $('#billing_box_3').removeClass('back-for-male');
+                $('#billing_box_2').addClass('back-for-male');
+
+            }
+            else if ($('input[name=radio]:checked').val() == "test") {
+                $('#billing_box_1').removeClass('back-for-male');
+                $('#billing_box_2').removeClass('back-for-male');
+                $('#billing_box_3').addClass('back-for-male');
+
+            }
+        });
+    });
+</script>
+<script>
+    function newAddress() {
+        var x = document.getElementById("autoUpdate");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: true,
+        navText: [
+            "<i class='fa fa-caret-left'></i>",
+            "<i class='fa fa-caret-right'></i>"
+        ],
+        autoplay: false,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2.5
+            }
+        },
+        dots:true
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+</body>
+<!-- end::Body -->
+</html>

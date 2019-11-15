@@ -1,0 +1,443 @@
+
+@media screen and (max-width: 2000px) and (min-width: 1920px) {
+    .login_section{
+        padding: 32% 2rem 1rem 2rem;
+    }
+    .box1{
+        height: 600px;
+    }
+    .ko-progress-circle {
+        width: 180px;
+        height: 180px;
+    }
+    .ko-progress-circle .ko-progress-circle__slice, .ko-progress-circle .ko-progress-circle__fill {
+        width: 180px;
+        height: 180px;
+
+    }
+    .ko-progress-circle .ko-progress-circle__slice {
+        clip: rect(0px, 180px, 180px, 90px);
+    }
+    .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill {
+        clip: rect(0px, 90px, 180px, 0px);
+    }
+    .ko-progress-circle .ko-progress-circle__overlay {
+        width: 160px;
+        height: 160px;
+        margin-left: 4.5px;
+        margin-top: 4.5px;
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
+@media screen and (max-width: 576px) and (min-width: 401px) {
+    /*    ------ Log In  --------- */
+    #bgimg{
+        background-image: url("../images/background_gradient_mobile.png") !important;
+        background-repeat: no-repeat;
+        /*background-size: 100% 100%;*/
+    }
+    .login_section{
+        padding: 1% .5rem 0rem .5rem;
+        margin-top: 15%;
+    }
+    .login_image{
+        width: 100%;
+    }
+    .logo_para{
+        font-family: "Source Sans Pro",Semibold;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .header_text{
+        margin-left: 0px;
+    }
+    .form_check{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12{
+        margin-top: 10%;
+    }
+    .fas{
+        left: 280px;
+    }
+    .forget_password{
+        left: 57%;
+    }
+    .btn.btn-default{
+        padding: 5%;
+    }
+
+    /*    ------ About Us  --------- */
+    .about_us_hidden{
+        display: block;
+        margin-top: 20%;
+    }
+    .about_us_show{
+        display: none;
+    }
+    .imge_text{
+        padding: 0;
+    }
+    .btn_cont{
+        width: 100% !important;
+        margin-left: 0%;
+    }
+    .box1{
+        height: 360px;
+        margin-top: 10%;
+    }
+    .logo {
+        width: 100%;
+        margin-left: 20%;
+        height: auto;
+    }
+    .product_detail, .shipping_detail, .payment_detail, .acceptance_detail {
+        width: 100%;
+    }
+    .btn-address{
+        width: 100% !important;
+    }
+    .btn-payment{
+        width: 100% !important;
+    }
+
+
+    /*    ------ Shipping Info  --------- */
+    .first_text{
+        width: 100%;
+        margin-top: 50%;
+    }
+    .price_text{
+        text-align: left;
+    }
+    .two_more{
+        margin-top: 5%;
+    }
+    .logo_image{
+        float: left;
+    }
+    .logo_text{
+        text-align: center;
+        padding-top: 5%;
+    }
+    .product_detail{
+        margin-top: 35%;
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    .total{
+        margin-top: 10%;
+    }
+    .autoUpdate{
+        margin-top: 10%;
+        width: 106.5% !important;
+        margin-left: -12px !important;
+    }
+    .back_to_order{
+        margin-top: -15%;
+    }
+    .btn-continue{
+        width: 90% !important;
+        padding: 5% !important;
+        position: absolute;
+        margin-top: 15% !important;
+        margin-bottom: 10% !important;
+    }
+    .shipping_info_form{
+        padding-bottom: 10%;
+    }
+    .form_group_billing{
+        padding-right: 3% !important;
+        padding-left: 3% !important;
+    }
+    .step{
+        padding-right: 0px;
+    }
+    .para_save_card{
+        width: 90% !important;
+    }
+    /*.billing_section{*/
+        /*background-color: #FFFDF0;*/
+    /*}*/
+    /*-------Payment--------*/
+    .tasks-list-item_responsive{
+        margin-top: 5% !important;
+    }
+    .para_save_card{
+        width: 90% !important;
+        left: 10% !important;
+        top:-18px;
+    }
+    .tasks-list-item{
+        line-height: 18px;
+    }
+    .tasks-list-item{
+        margin-top: 10%;
+    }
+    .card_number{
+        width: 270px !important;
+    }
+    .expire_date{
+        width: 0px !important;
+        float: left;
+        left: 77%;
+    }
+
+    /*------ term and services---------*/
+    .quick_card_responsive{
+        display: none;
+    }
+    .tabs_terms{
+        margin-top: 0%;
+    }
+    .para_terms_condition{
+        height: 280px;
+        padding-right: 5% !important;
+    }
+    .product_detail_responsive{
+        margin-bottom: 0px;
+        margin-top: 25% !important;
+    }
+    .btn_term_condition{
+        width: 100% !important;
+        margin-left: 0%;
+        margin-top: 0% !important;
+    }
+
+    /*----- Loader page ------*/
+    .quickcard{
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    .text_area{
+        margin-top: 25%;
+    }
+    .ko-progress-circle{
+        position: fixed;
+        top: 60%;
+        left: 30%;
+    }
+    #progress_responsive{
+        background-image: url("../images/background_validation@3x.png") !important;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+    .ko-progress-circle .ko-progress-circle__overlay {
+        margin-left: 5px !important;
+        margin-top: 5px !important;
+    }
+
+}
+@media screen and (max-width: 400px){
+    /*    ------ Log In  --------- */
+    #bgimg{
+        background-image: url("../images/background_gradient_mobile.png");
+        background-repeat: no-repeat;
+        /*background-size: 100% 100%;*/
+    }
+    .login_section{
+        padding: 1% .5rem 0rem .5rem;
+        margin-top: 7%;
+    }
+    .login_image{
+        width: 100%;
+    }
+    .logo_para{
+        font-family: "Source Sans Pro",Semibold;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .header_text{
+        margin-left: 0px;
+    }
+    .form_check{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12{
+        margin-top: 10%;
+    }
+    .fas{
+        left: 240px;
+    }
+    .forget_password{
+        left: 57%;
+    }
+    .btn.btn-default{
+        padding: 5%;
+    }
+
+    /*    ------ About Us  --------- */
+    .about_us_hidden{
+        display: block;
+        margin-top: 20%;
+    }
+    .about_us_show{
+        display: none;
+    }
+    .imge_text{
+        padding: 0;
+    }
+    .para_graph{
+        padding-right: 15px;
+        margin-top: 10%;
+    }
+    .box1{
+        height: 288px;
+    }
+    .logo {
+        width: 100%;
+        margin-left: 20%;
+        height: auto;
+    }
+    .btn_cont{
+        width: 100% !important;
+        margin-left: 0%;
+    }
+    .product_detail, .shipping_detail, .payment_detail, .acceptance_detail {
+        width: 100%;
+    }
+    .btn-address{
+        width: 100% !important;
+    }
+    .btn-payment{
+        width: 100% !important;
+    }
+
+    /*    ------ Shipping Info  --------- */
+    .first_text{
+        width: 100%;
+        margin-top: 50%;
+    }
+    .price_text{
+        text-align: left;
+    }
+    .two_more{
+        margin-top: 5%;
+    }
+    .logo_image{
+        float: left;
+    }
+    .logo_text{
+        text-align: center;
+        padding-top: 5%;
+    }
+    .product_detail{
+        margin-top: 35%;
+        width: 100%;
+        margin-bottom: 35%;
+    }
+    .autoUpdate{
+        margin-top: 10%;
+        width: 105.8% !important;
+        margin-left: -9px !important;
+    }
+    .back_to_order{
+        margin-top: -15%;
+    }
+    .total{
+        margin-top: 7%;
+    }
+    .btn-continue{
+        width: 90% !important;
+        padding: 5% !important;
+        position: absolute;
+        margin-top: 15% !important;
+        margin-bottom: 10% !important;
+    }
+    .shipping_info_form{
+        padding-bottom: 10%;
+    }
+    .form_group_billing{
+        padding-right: 3% !important;
+        padding-left: 3% !important;
+    }
+    .step{
+        padding-right: 0px;
+    }
+    /*.billing_section{*/
+        /*background-color: #FFFDF0;*/
+        /*padding-right: 10px !important;*/
+    /*}*/
+    /*-------Payment--------*/
+    .tasks-list-item_responsive{
+        margin-top: 5% !important;
+    }
+    .para_save_card{
+        width: 90% !important;
+        left: 10% !important;
+        top:-18px;
+    }
+    .tasks-list-item{
+        line-height: 18px;
+    }
+    .tasks-list-item{
+        margin-top: 10%;
+    }
+    .card_number{
+        width: 270px !important;
+    }
+    .expire_date{
+        width: 0px !important;
+        float: left;
+        left: 77%;
+    }
+    /*------ term and services---------*/
+    .quick_card_responsive{
+        display: none;
+    }
+    .tabs_terms{
+        margin-top: 0%;
+    }
+    .para_terms_condition{
+        height: 240px;
+        padding-right: 5% !important;
+    }
+    .product_detail_responsive{
+        margin-bottom: 0px;
+        margin-top: 25% !important;
+    }
+    .btn_term_condition{
+        width: 100% !important;
+        margin-left: 0%;
+        margin-top: 0% !important;
+    }
+
+
+    /*----- Loader page ------*/
+    .quickcard{
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    .text_area{
+        margin-top: 25%;
+    }
+    .ko-progress-circle{
+        position: fixed;
+        top: 60%;
+        left: 25%;
+    }
+    #progress_responsive{
+        background-image: url("../images/background_validation@3x.png") !important;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+    .ko-progress-circle .ko-progress-circle__overlay {
+        margin-left: 4.745px !important;
+    }
+
+}
