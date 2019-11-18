@@ -60,19 +60,19 @@
                     </a>
                     <div class="row">
                         <!--<div class="col-md-12 col-sm-12">-->
-                            <!--<div class="step">-->
-                                <!--<p class="step_heading">-->
-                                    <!--Step 1-->
-                                <!--</p>-->
-                                <!--<p class="two_more">Two more</p>-->
+                        <!--<div class="step">-->
+                        <!--<p class="step_heading">-->
+                        <!--Step 1-->
+                        <!--</p>-->
+                        <!--<p class="two_more">Two more</p>-->
 
-                                <!--<div class="hr"></div>-->
-                            <!--</div>-->
+                        <!--<div class="hr"></div>-->
+                        <!--</div>-->
                         <!--</div>-->
 
                         <div class="col-md-12 col-sm-12 list_product_address">
                             <div class="product_detail product_success">
-                                <div class="success password_success">
+                                <div class="password_success">
                                     <div class="success_iamge">
                                         <img src="images/toast_password_saved.png">
                                     </div>
@@ -252,7 +252,7 @@
                                                     <div class="item">
                                                         <div class="billing_box back-for-male" id="payment_box_1">
                                                             <div class="radio">
-                                                                <input class="checked" id="radio-4"  value="box1" name="radio" type="radio" checked>
+                                                                <input class="checked" id="radio-4"  value="box1" name="radio1" type="radio" checked>
                                                                 <label for="radio-4" class="radio-label"></label>
                                                             </div>
                                                             <div class="billing_address_silk">
@@ -281,7 +281,7 @@
                                                     <div class="item">
                                                         <div class="billing_box" id="payment_box_2">
                                                             <div class="radio">
-                                                                <input class="checked" id="radio-5" value="box2" name="radio" type="radio">
+                                                                <input class="checked" id="radio-5" value="box2" name="radio1" type="radio">
                                                                 <label for="radio-5" class="radio-label"></label>
                                                             </div>
                                                             <div class="billing_address_silk">
@@ -301,7 +301,7 @@
                                                     <div class="item">
                                                         <div class="billing_box" id="payment_box_3">
                                                             <div class="radio">
-                                                                <input class="checked" id="radio-6" value="box3" name="radio" type="radio">
+                                                                <input class="checked" id="radio-6" value="box3" name="radio1" type="radio">
                                                                 <label for="radio-6" class="radio-label"></label>
                                                             </div>
                                                             <div class="billing_address_silk">
@@ -385,17 +385,17 @@
                                                         </p>
                                                     </label>
                                                     <!--<label class="tasks-list-item tasks-list-item_responsive">-->
-                                                        <!--<input type="checkbox" name="task_1" value="0" class="tasks-list-cb" checked>-->
-                                                        <!--<span class="tasks-list-mark"></span>-->
-                                                        <!--<p class="tasks-list-desc_payment para_save_card">-->
-                                                            <!--I accept the-->
-                                                            <!--<a href="privacy_policy.html" class="terms">Privacy Policy.</a>-->
-                                                        <!--</p>-->
+                                                    <!--<input type="checkbox" name="task_1" value="0" class="tasks-list-cb" checked>-->
+                                                    <!--<span class="tasks-list-mark"></span>-->
+                                                    <!--<p class="tasks-list-desc_payment para_save_card">-->
+                                                    <!--I accept the-->
+                                                    <!--<a href="privacy_policy.html" class="terms">Privacy Policy.</a>-->
+                                                    <!--</p>-->
                                                     <!--</label>-->
                                                 </div>
                                             </div>
                                             <div class="col-md-12 col-sm-12">
-                                                <a href="shipping_info.html" class="btn btn-default btn-continue">
+                                                <a href="progress.html" class="btn btn-default btn-continue">
                                                     Pay Now
                                                 </a>
                                             </div>
@@ -403,7 +403,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -416,6 +415,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
 <script>
+    $(".password_success").fadeIn()
+        .css({left:400,position:'relative'})
+        .animate({left:0}, 400, function() {
+
+            $('.password_success').delay(3000).fadeOut('slow');
+        });
+
+
+    $(".success").fadeIn()
+        .css({left:400,position:'relative'})
+        .animate({left:0}, 400, function() {
+
+            $('.success').delay(3000).fadeOut('slow');
+        });
+    doBounce($('.success'), 0, '20px', 300);
+    function doBounce(element, times, distance, speed) {
+        for(i = 0; i <= times; i++) {
+            console.log(i);
+            element.animate({marginLeft: '-='+distance},speed)
+                .animate({marginLeft: '+='+distance},speed);
+        }
+    }
+
+
     $(function () {
 
         $("input[name=radio]:radio").click(function () {
@@ -469,6 +492,7 @@
         margin: 10,
         nav: true,
         dots:true,
+        pagination:true,
         navText: [
 //            "<i class='fa fa-caret-left'></i>",
 //            "<i class='fa fa-caret-right'></i>"

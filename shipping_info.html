@@ -171,6 +171,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="js/intlInputPhone.min.js"></script>
 <script>
+
+    $(".error").fadeIn()
+        .css({left:400,position:'relative'})
+        .animate({left:0}, 400, function() {
+
+            $('.error').delay(3000).fadeOut('slow');
+        });
+    doBounce($('.error'), 0, '20px', 300);
+    function doBounce(element, times, distance, speed) {
+        for(i = 0; i <= times; i++) {
+            console.log(i);
+            element.animate({marginLeft: '-='+distance},speed)
+                .animate({marginLeft: '+='+distance},speed);
+        }
+    }
+
     $(document).ready(function() {
         $('.input-phone').intlInputPhone();
     })

@@ -27,6 +27,9 @@
         margin-left: 4.5px;
         margin-top: 4.5px;
     }
+    .payment_loader{
+        margin-top: 20% !important;
+    }
 }
 
 @media (max-width: 992px) {
